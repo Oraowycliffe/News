@@ -1,0 +1,29 @@
+{{#partial "content"}}
+    <form action="/Users" method="post">
+        <h4> Enter User Data </h4><br>
+        <div class="form-group">
+            <label for="name">Enter name</label>
+            <input type="text" id="name" name="name" class="form-control" required >
+        </div>
+
+        <div class="form-group">
+            <label for="ranger">Enter  Position</label>
+            <input type="text" id="description" name ="description" class="form-control" required >
+        </div>
+
+        <div class="form-group">
+            <label for="location">Employee Role</label>
+            <input type="text" id="employees" name="employees" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Department Id</label>
+            <input type="number" id="departmentId" name="departmentId" class="form-control" required>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary"> Submit </button>
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}

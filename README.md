@@ -50,4 +50,4 @@ No known bugs
 
 ## License
 
-MIT (c) 2019 **[Orao Wycliffe](https://github.com/Oraowycliffe/wildlife-tracker/blob/master/LICENSE)**
+MIT (c) 2019 **[Orao Wycliffe](https://github.com/Oraowycliffe/News/blob/master/LICENSE)**

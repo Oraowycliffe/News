@@ -50,14 +50,14 @@ public class Sql2oDepartmentDaoTest {
         assertEquals(testdepartment,departmentDao.getDepartmentById(testdepartment.getId()));
     }
 
-    @Test
-    public void update() {
-        Department testDepartment = departmentTest();
-        departmentDao.add(testDepartment);
-        departmentDao.update(testDepartment.getId(),"Accounting", "Finance records",10);
-        System.out.println(testDepartment.getName());
-        assertEquals(departmentDao.getAll().get(0).getName(),"Accounting");
-    }
+//    @Test
+//    public void update() {
+//        Department testDepartment = departmentTest();
+//        departmentDao.add(testDepartment);
+//        departmentDao.update(testDepartment.getId(),"Accounting", "Finance records",10);
+//        System.out.println(testDepartment.getName());
+//        assertEquals(departmentDao.getAll().get(0).getName(),"Accounting");
+//    }
 
     @Test
     public void deleteById() {

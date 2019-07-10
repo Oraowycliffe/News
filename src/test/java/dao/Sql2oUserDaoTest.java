@@ -24,7 +24,7 @@ public class Sql2oUserDaoTest {
 
     @After
     public void tearDown() throws Exception {
-//        userDao.clearAll();
+        userDao.clearAll();
         conn.close();
     }
 

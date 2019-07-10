@@ -54,35 +54,44 @@ public static void main(String[] args){
         String name = request.queryParams("name");
         String description = request.queryParams("description");
         int employees = Integer.parseInt(request.queryParams("employees"));
-        Department newDepartment = new Department("Accounts", "Finance records",10);
+        Department newDepartment = new Department(name, description,employees);
+        departmentDao.add(newDepartment);
         model.put("template", "public/templates/success.hbs");
-        return new ModelAndView(model, "success.hbs");
+        return new ModelAndView(model, "Success.hbs");
     }, new HandlebarsTemplateEngine());
     get("/News/new", (req,res)->{
         Map<String, Object> model = new HashMap<>();
         return new ModelAndView(model, "NewsForm.hbs");
     },new HandlebarsTemplateEngine());
+
+
     post("/News", (request, response) -> {
         Map<String, Object> model = new HashMap<String, Object>();
         String content= request.queryParams("content");
         int departmentId = Integer.parseInt(request.queryParams("departmentId"));
-        News news = new News("Four To be added to infra",3);
-        model.put("template", "public/templates/success.hbs");
-        return new ModelAndView(model, "success.hbs");
+        News news = new News(content,departmentId);
+        newsDao.add(news);
+        model.put("template", news);
+        return new ModelAndView(model, "Success.hbs");
+
+
+
     }, new HandlebarsTemplateEngine());
     get("/Users/new", (req,res)->{
         Map<String, Object> model = new HashMap<>();
         return new ModelAndView(model, "UserForm.hbs");
     },new HandlebarsTemplateEngine());
+
     post("/Users", (request, response) -> {
         Map<String, Object> model = new HashMap<String, Object>();
         String name= request.queryParams("name");
         String position = request.queryParams("position");
         String role= request.queryParams("role");
         int departmentId = Integer.parseInt(request.queryParams("departmentId"));
-        User user = new User("  Joh Doe","Lead Techie","Organize Infra",2);
+        User user = new User(name,position,role,departmentId);
+        userDao.add(user);
         model.put("template", "public/templates/success.hbs");
-        return new ModelAndView(model, "success.hbs");
+        return new ModelAndView(model, "Success.hbs");
     }, new HandlebarsTemplateEngine());
 
 

@@ -22,11 +22,11 @@ public static void main(String[] args){
     staticFileLocation("/public");
     Connection conn;
     //local
-    String connectionString = "jdbc:postgresql://localhost:5432/newsapi";
-    Sql2o sql2o = new Sql2o(connectionString, "moringa", "Wycky@1998");
+//    String connectionString = "jdbc:postgresql://localhost:5432/newsapi";
+//    Sql2o sql2o = new Sql2o(connectionString, "moringa", "Wycky@1998");
 //heroku DB
-//    String connectionString = "jdbc:postgresql://ec2-174-129-29-101.compute-1.amazonaws.com:5432/d27jqp95m0jjlj"; //!
-//    Sql2o sql2o = new Sql2o(connectionString, "xrwecveihekrpx", "4f70af03069db84b4b2f72cba894869b3e563918f21966a7279b47b38286a11c");
+    String connectionString = "jdbc:postgresql://ec2-174-129-29-101.compute-1.amazonaws.com:5432/d27jqp95m0jjlj"; //!
+    Sql2o sql2o = new Sql2o(connectionString, "xrwecveihekrpx", "4f70af03069db84b4b2f72cba894869b3e563918f21966a7279b47b38286a11c");
 
     final Sql2oDepartmentDao departmentDao = new Sql2oDepartmentDao(sql2o);
     Sql2oNewsDao newsDao= new Sql2oNewsDao(sql2o);

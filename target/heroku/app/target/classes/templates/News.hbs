@@ -1,0 +1,25 @@
+{{#partial "content"}}
+    <br>
+    <br>
+    <br>
+    <h3 class="carded">  </h3>
+    <div id="card">
+        <div class="col-sm-5">
+            {{#each news}}
+                <div class="container">
+                    <blockquote>
+                        <p id="">{{content}}</p>
+                        <cite>&mdash; <span id="">Department Id: {{departmentId}}</span>
+                            <span id="btn-tweet">
+					<i class="fa fa-twitter"></i>
+				</span>
+                        </cite>
+                    </blockquote>
+<!--                    <div class="load"><i class="fa fa-spinner fa-spin"></i></div>-->
+                </div>
+                <footer>Powered by&nbsp;<a href="https://moringaschool.com/">Moringa school</a></footer>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

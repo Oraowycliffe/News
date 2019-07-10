@@ -1,0 +1,23 @@
+{{#partial "content"}}
+    <br>
+    <br>
+    <br>
+    <h3 class="carded"> </h3><br>
+    <div id="card">
+        <div class="col-sm-5">
+            {{#each department}}
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Department name: {{name}}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p> Description : {{position}} </p>
+                        <p> No of Employees : {{role}} </p>
+
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

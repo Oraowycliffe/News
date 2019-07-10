@@ -39,8 +39,9 @@
 
 }
 .success{
- margin-top: 50px;
- background-color: black;
+text-align: center;
+ margin-top: 100px;
+ color:white;
 }
 .carded{
     margin-bottom: 30px;
@@ -49,6 +50,7 @@ body{
     background-image:url("/images/background.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment:fixed;
 }
 
 #btn-quote {
@@ -178,4 +180,33 @@ button {
 
 .footer:hover {
   background: #1abc9c;
+}
+.navbar{
+    font-family: 'Spinnaker', sans-serif;
+}
+#foot{
+    color:white;
+    font-family: 'Spinnaker', sans-serif;
+    margin-left:40px;
+}
+
+#input{
+    width: 300px;
+    padding: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;;
+    color: white;
+
+}
+.input button{
+    width: 340px;
+    margin-top: 20px;
+}
+#department{
+position:relative:
+    margin-top: 30px;
+    width: 100vw;
+    background-image:url("/images/depart.jpeg)";
+
 }

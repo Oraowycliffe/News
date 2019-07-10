@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="dao.Sql2oUserDaoTest" time="0.335" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="dao.Sql2oUserDaoTest" time="0.573" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-LTS"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.Sql2oUserDaoTest" name="getAll" time="0.077"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="add" time="0.036"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="getAllUsersInADepartment" time="0.063"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="clearAll" time="0.073"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="deleteById" time="0.086"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="getAll" time="0.207"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="add" time="0.107"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="getAllUsersInADepartment" time="0.062"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="clearAll" time="0.071"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="deleteById" time="0.126"/>
 </testsuite>

@@ -1,0 +1,24 @@
+{{#partial "content"}}
+    <form action="/Department" method="post">
+        <h4> Enter Department Details </h4><br>
+        <div class="form-group">
+            <label for="name">Enter Department name</label>
+            <input type="text" id="name" name="name" class="form-control" required >
+        </div>
+
+        <div class="form-group">
+            <label for="ranger">Enter  department Description</label>
+            <input type="text" id="description" name ="description" class="form-control" required >
+        </div>
+
+        <div class="form-group">
+            <label for="location">Number of employees</label>
+            <input type="number" id="employees" name="employees" class="form-control" required>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary"> Submit </button>
+    </form>
+
+{{/partial}}
+{{> layout.hbs}}

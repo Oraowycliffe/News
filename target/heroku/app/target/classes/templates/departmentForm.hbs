@@ -1,5 +1,7 @@
 {{#partial "content"}}
-    <form action="/Department" method="post">
+    <div id="department">
+        <h1></h1><br><br><br>
+    <form action="/Department" method="post" class="col-md-6 carded">
         <h4> Enter Department Details </h4><br>
         <div class="form-group">
             <label for="name">Enter Department name</label>
@@ -19,6 +21,7 @@
 
         <button type="submit" class="btn btn-primary"> Submit </button>
     </form>
+    </div>
 
 {{/partial}}
 {{> layout.hbs}}

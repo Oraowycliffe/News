@@ -203,10 +203,10 @@ button {
     width: 340px;
     margin-top: 20px;
 }
-#department{
-position:relative:
-    margin-top: 30px;
-    width: 100vw;
-    background-image:url("/images/depart.jpeg)";
+#zee{
+  font-family: 'Spinnaker', sans-serif;
 
+}
+*{
+    transition: all 0.9s ease-out;
 }
